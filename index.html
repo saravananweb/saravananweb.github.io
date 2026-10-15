@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Saravanan - Frontend Developer specializing in React.js, Next.js, JavaScript and modern web applications." />
   <title>Saravanan | Frontend Developer | React.js and  Next.js Developer</title>
-  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,6 +35,7 @@
     }
     .theme-icon-btn:hover { border-color:#60a5fa; background:rgba(96,165,250,.1); transform:rotate(12deg); }
     .theme-icon-btn svg { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+	
     /* Light theme; dark remains the default */
     body.light { background:#f8fafc; color:#111827; }
     body.light header { background:rgba(248,250,252,.92); border-color:#e2e8f0; }
@@ -67,6 +68,7 @@
     body.light .bg-white { background:#111827; color:#fff; }
     body.light a.bg-white { background:#111827; color:#fff; }
     body.light .section-label { color:#2563eb; }
+	
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior:auto; }
       *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
@@ -84,7 +86,7 @@
         <a href="#experience" class="nav-link text-sm">Experience</a>
 		<a href="/Resume-saravanan-react-js-developer.pdf" download class="nav-link text-sm">Resume</a>
         <a href="#contact" class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-blue-200">Contact Me</a>
-        <button id="themeToggle" type="button" class="theme-icon-btn" aria-label="Switch to light mode" title="Switch theme">
+        <button id="themeToggle" type="button" class="hidden theme-icon-btn" aria-label="Switch to light mode" title="Switch theme">
           <svg id="themeIcon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
         </button>
       </div>
@@ -180,8 +182,9 @@
             technologies and AI-assisted development tools.
         </p>
 
-        <div class="mt-12 grid auto-rows-fr grid-cols-2 items-stretch gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        <div class="mt-12 grid auto-rows-fr grid-cols-1 items-stretch gap-4 sm:grid-cols-3 lg:grid-cols-4">
 
+           
             <div class="skill-tag glass flex h-full min-h-[112px] flex-col rounded-xl p-5">
                 <p class="text-lg font-medium">React.js</p>
                 <p class="mt-auto pt-2 text-sm text-gray-500">Component-Based UI</p>
@@ -197,7 +200,7 @@
                 <p class="mt-auto pt-2 text-sm text-gray-500">Frontend Development</p>
             </div>
 
-            <!-- Programming Languages -->
+           
             <div class="skill-tag glass flex h-full min-h-[112px] flex-col rounded-xl p-5">
                 <p class="text-lg font-medium">JavaScript</p>
                 <p class="mt-auto pt-2 text-sm text-gray-500">ES6+ Development</p>
@@ -213,6 +216,7 @@
                 <p class="mt-auto pt-2 text-sm text-gray-500">Server-Side Development</p>
             </div>
 
+          
             <div class="skill-tag glass flex h-full min-h-[112px] flex-col rounded-xl p-5">
                 <p class="text-lg font-medium">HTML5</p>
                 <p class="mt-auto pt-2 text-sm text-gray-500">Semantic Markup</p>
@@ -232,8 +236,7 @@
                 <p class="text-lg font-medium">Bootstrap</p>
                 <p class="mt-auto pt-2 text-sm text-gray-500">Responsive UI Components</p>
             </div>
-
-            <!-- APIs and CMS -->
+            
             <div class="skill-tag glass flex h-full min-h-[112px] flex-col rounded-xl p-5">
                 <p class="text-lg font-medium">REST APIs</p>
                 <p class="mt-auto pt-2 text-sm text-gray-500">API Integration</p>
@@ -249,7 +252,6 @@
                 <p class="mt-auto pt-2 text-sm text-gray-500">E-commerce Development</p>
             </div>
 
-            <!-- Development Tools -->
             <div class="skill-tag glass flex h-full min-h-[112px] flex-col rounded-xl p-5">
                 <p class="text-lg font-medium">Git</p>
                 <p class="mt-auto pt-2 text-sm text-gray-500">Version Control</p>
@@ -283,6 +285,7 @@
          
 
         <div class="mt-12 grid grid-cols-1 items-stretch gap-6 md:grid-cols-2">
+
           
             <article class="project-card reveal glass min-w-0 rounded-2xl p-7 sm:p-9">
                 <div class="mb-8 flex items-center justify-between gap-3">
@@ -319,7 +322,7 @@
                 </div>
             </article>
 
-          
+           
             <article class="project-card reveal glass min-w-0 rounded-2xl p-7 sm:p-9">
                 <div class="mb-8 flex items-center justify-between gap-3">
                     <span class="rounded-full border border-purple-400/30 px-3 py-1 text-xs text-purple-300">
@@ -391,7 +394,7 @@
                 </div>
             </article>
 
-   
+           
             <article class="project-card reveal glass min-w-0 rounded-2xl p-7 sm:p-9">
                 <div class="mb-8 flex items-center justify-between gap-3">
                     <span class="rounded-full border border-cyan-400/30 px-3 py-1 text-xs text-cyan-300">
@@ -482,7 +485,7 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Theme toggle: dark mode by default, remember user's selection
+    // theme toggle: dark mode by default, remember user's selection
     const themeToggles = [
       document.getElementById("themeToggle"),
       document.getElementById("mobileThemeToggle")
@@ -513,7 +516,7 @@
       updateThemeButton();
     }));
 
-    // GSAP animations
+    // GSAP animations; content remains visible if GSAP fails to load
     const prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (window.gsap && !prefersReducedMotion) {
       gsap.registerPlugin(ScrollTrigger);
